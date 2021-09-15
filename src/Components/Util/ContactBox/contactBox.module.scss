@@ -1,0 +1,26 @@
+@import "../../../sass/utilities/variables";
+
+.ContactBox {
+  display: flex;
+  align-items: center;
+//   flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+  &_icon {
+    border-radius: 50%;
+    border: 4px solid $mainColor;
+    padding: 15px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $mainColor;
+  }
+  &_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 15px;
+  }
+}

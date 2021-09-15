@@ -1,0 +1,21 @@
+@import '../../../sass/utilities/variables';
+
+.Stealbox{
+    background-color: $blkColor2;
+    padding: 25px;
+    max-width: 70%;
+    margin: auto;
+    @media (max-width : 991px ) {
+        max-width: 100%;
+    }
+    &_box{
+        padding: 15px;
+        box-shadow: 0 0px 10px 0 rgba($color: $blkColor, $alpha: .66) !important;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

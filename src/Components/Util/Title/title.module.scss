@@ -1,0 +1,25 @@
+@import "../../../sass/utilities/variables";
+
+.Title {
+  font-size:  $bannerHeadFont;
+  font-weight: bolder;
+  color: $blkColor;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  span {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 125px;
+      height: 4px;
+      background-color: $mainColor;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../sass/utilities/variables';
+
+.content{
+    width: 100%;
+    height: 100%;
+    &_price{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        del{
+            font-size: $mdFont;
+            color: $grayColor;
+        }
+        &_green {
+            margin-left: 5px;
+            color: #57bf6d;
+            font-size: $bannerTextFont;
+        }
+    }
+}

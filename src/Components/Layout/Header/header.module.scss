@@ -1,0 +1,168 @@
+@import "../../../sass/utilities/variables";
+@import "../../../sass/utilities/mixins";
+
+.Header{
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+  transition: $transition;
+  padding: 0px 0 5px;
+}
+
+.navbar_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &_item {
+    margin-right: 15px;
+
+    @media (max-width: 991px) {
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+    &_link {
+      padding: 5px 0;
+      margin-bottom: 0;
+      font-size: $paragraphFont;
+      color: $whtColor;
+      svg{
+        path{
+          fill: $whtColor;
+        }
+      }
+      @include navHover;
+    }
+  }
+  &_dropdown {
+    margin-right: 15px;
+    position: relative;
+    @media (max-width: 991px) {
+      margin-right: 0;
+    }
+    &_link {
+      margin-bottom: 0;
+      position: relative;
+      transition: $transition;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      // color: $whtColor;
+      svg {
+        path {
+          transition: $transition;
+          fill: $whtColor;
+        }
+      }
+      &_span {
+        display: inline-block;
+        background-color: $mainColor;
+        margin-left: 10px;
+        padding: 2px 4px;
+        border-radius: 3px;
+        font-size: $paragraphFont;
+        font-weight: 600;
+        color: $whtColor;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          left: -6px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 0;
+          height: 0;
+          border-top: 6px solid transparent;
+          border-bottom: 6px solid transparent;
+
+          border-right: 6px solid $mainColor;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            fill: $mainColor;
+          }
+        }
+      }
+    }
+    &_menu {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      background-color: $whtColor;
+      border-top: 3px solid $mainColor;
+      width: 350px;
+      height: auto; // auto
+      padding: 15px 0;
+      padding-bottom: 0;
+      box-shadow: 0 3px 6px rgba($color: $blkColor, $alpha: 0.16) !important;
+      transition: $transition;
+
+      opacity: 0;
+      visibility: hidden;
+
+      @media (max-width: 576px) {
+        width: 300px;
+        right: -130px;
+      }
+      @media (min-width: 576px) and (max-width: 991px) {
+        right: -155px;
+      }
+      &_header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba($color: $textColor, $alpha: 0.5);
+        &_img {
+          flex: 0 0 30%;
+          max-width: 30%;
+        }
+        &_content {
+          flex: 0 0 60%;
+          max-width: 60%;
+          padding-left: 1rem;
+          &_text {
+            font-size: $paragraphFont;
+            color: $textColor;
+          }
+        }
+      }
+      &_total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px 15px;
+        border-bottom: 1px solid rgba($color: $textColor, $alpha: 0.5);
+
+        &_title {
+          font-size: $mainFont;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 0;
+          color: $textColor;
+        }
+        &_money {
+          font-size: $mainFont;
+        }
+      }
+      &_footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px 15px;
+        border-bottom: 1px solid rgba($color: $textColor, $alpha: 0.5);
+      }
+    }
+    &:hover {
+      .navbar_list_dropdown_menu {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}

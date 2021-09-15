@@ -1,0 +1,26 @@
+@import "../../../sass/utilities/variables";
+
+.Form {
+  &_input {
+    border-radius: 15px !important;
+    padding: 10px 20px !important;
+    color: $grayColor;
+    border: 3px solid transparent !important;
+    transition: $transition !important;
+    &::placeholder {
+      color: $grayColor;
+    }
+    &:focus{
+        border-color: $mainColor !important;
+    }
+  }
+  &_button {
+    transition: $transition !important;
+    border-radius: 15px !important;
+    &:hover{
+        color: $mainColor !important;
+        background-color: transparent !important;
+
+    }
+  } 
+}

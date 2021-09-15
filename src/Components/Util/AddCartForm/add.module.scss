@@ -1,0 +1,47 @@
+@import "../../../sass/utilities/variables";
+
+.AddForm {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &_group {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &_button {
+      height: 35px;
+      border: 1px solid $grayColor;
+      flex: 0 0 25%;
+      max-width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: $mdFont;
+      font-weight: bold;
+      color: $textColor;
+      cursor: pointer;
+    }
+    &_input {
+      flex: 0 0 40%;
+      //   max-width: 12%;
+      height: 35px;
+      padding: 8px 10px;
+      border: 1px solid $grayColor !important;
+       border-right: 0 !important; 
+       border-left: 0 !important;
+      border-radius: 0 !important;
+      text-align: center;
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+  &_submit {
+    border-radius: 0 !important;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../sass/utilities/variables';
+
+.scrollTop{
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: $blkColor2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $whtColor;
+    cursor: pointer;
+    opacity: .5;
+    &:hover{
+        opacity: 1;
+    }
+}

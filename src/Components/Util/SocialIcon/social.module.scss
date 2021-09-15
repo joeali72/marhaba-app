@@ -1,0 +1,26 @@
+@import "../../../sass/utilities/variables";
+
+.SocialIcons {
+  margin-top: 2rem;
+  &_list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    li {
+      a {
+        margin-right: 1rem;
+        color: $whtColor;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $mainColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        transition: $transition;
+        border: 1px solid transparent;
+      }
+    }
+  }
+}

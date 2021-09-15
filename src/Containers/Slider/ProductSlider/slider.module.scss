@@ -1,0 +1,9 @@
+@import "../../../sass/utilities/variables";
+
+.ProductSwiper {
+  margin-top: 50px;
+  width: 85%;
+  @media (max-width: 767px) {
+    padding: 25px 0;
+  }
+}

@@ -1,0 +1,10 @@
+export { getBannerData } from './bannerData';
+export { getIntroData } from './introductionData';
+export { getAboutData } from './aboutData';
+export { getWhyData, getWhySliderData } from './whyData';
+export { getProductsData, getProductsImgsData } from './productsData';
+export { getTestiData } from './testimonialsData';
+export { getContactData, postContactData , getsocialContactData } from './contactUsData';
+export { postReviewData } from './reviewData';
+export { postAddCart, getNumCart } from './addCart';
+export { postCheckoutData } from './checkout';

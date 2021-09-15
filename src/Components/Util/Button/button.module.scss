@@ -1,0 +1,10 @@
+@import '../../../sass/utilities/variables';
+
+.Button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: $mainFont;
+    font-weight: 600;
+    transition: $transition;
+}

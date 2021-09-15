@@ -1,0 +1,9 @@
+@import '../../../sass/utilities/variables';
+
+.Subtitle{
+    font-size: $xxlFont;
+    font-weight: 600;
+    color: $mainColor;
+    margin-bottom: 1rem;
+    text-align: center;
+}

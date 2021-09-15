@@ -1,0 +1,46 @@
+@import '../../../sass/utilities/variables';
+
+.ImgZoom {
+    height:100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &_sale{
+        position: absolute;
+        display: inline-block;
+        left: 5px;
+        top: 5px;
+        z-index: 10;
+        color: $whtColor;
+        background-color: rgba(63,195,135,0.8);
+        padding: 4px 10px;
+        text-transform: uppercase;
+        font-size: $paragraphFont;
+    }
+    &_imgZoom{
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden;
+        margin: auto;
+        > div {
+            width: 100% !important;
+            height: 100% !important; 
+        }
+    }
+    &_imgs{
+        width: 100%;
+        height: 100%;
+        &_list{
+            display: flex;
+            align-items: center;
+            padding: 0;
+            padding: 15px 0;
+            &_item{
+                margin-right: 15px;
+                flex: 0 0 25%;
+                max-width: 25%;
+                cursor: pointer;
+            }
+        }
+    }
+}

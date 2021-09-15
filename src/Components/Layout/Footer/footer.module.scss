@@ -1,0 +1,13 @@
+@import "../../../sass/utilities/variables";
+
+.footer{
+    background-color: $thirColor;
+    padding: 8px 0;
+    text-align: center;
+    &_copyright{
+        text-align: center;
+        margin-bottom: 0;
+        color: $offColor;
+        font-size: $mainFont;
+    }
+}
